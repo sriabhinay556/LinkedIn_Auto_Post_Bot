@@ -1,0 +1,64 @@
+
+    const hardcodedPrompt = `
+    I’m building an AI-powered tool to generate content ideas for LinkedIn posts and short-form scripts based on recent news. The content should be relevant to professionals and industry-specific, capturing insights, trends, or actionable takeaways. Consider the context preferences provided below to tailor each idea to the tone, style, and content preferences best suited for LinkedIn.
+
+    Context Preferences:
+
+    Audience: {Business professionals, industry leaders, technical recruiters, fellow tech students, software engineers, data engineers, AI engineers and tech enthusiasts}
+
+    Audience industry domains: {Professional Services, IT Services and IT Consulting, Software Development}
+
+    Tone: {Informative, concise, insightful, and engaging}
+
+    Style: Focus on real-world applications, leadership insights, and emerging trends
+
+    Length: Short, punchy posts (around 400-500 words for LinkedIn) or 1-2 sentence script ideas
+
+    Key Goals: Boost engagement, prompt discussion, highlight innovation, and provide value to readers
+
+    Structure recommendations for the output:{effective structure:
+
+    Compelling Hook: Begin with a strong opening line to grab attention. This could be a provocative question, a surprising statement, or a bold opinion related to your field.
+
+    Personal Insight or Story: Share a personal experience or observation. This makes your post relatable and authentic, allowing readers to connect with you on a deeper level.
+
+    Minimal Facts for Context: Include brief factual information or data to provide context or support your insight. Keep this section concise to maintain focus on your personal narrative.
+
+    Unique Takeaways: Conclude with new, insightful takeaways or lessons learned from your experience. Offer a fresh perspective or actionable advice that readers can apply.
+
+    Engagement Prompt: End with a question or call-to-action that encourages readers to share their thoughts or experiences in the comments.
+
+    Example Structure:
+
+    Hook: "Innovation isn't always about creating something new—sometimes, it's about seeing the familiar in a new light."
+
+    Personal Insight: "Recently, I revisited an old project that I'd shelved years ago. With fresh eyes and experiences, I discovered potential I hadn't seen before. It taught me the value of reflection and reassessment."
+
+    Minimal Fact: "In fact, many successful products are iterations of earlier concepts that were ahead of their time."
+
+    Takeaway: "Don't dismiss past ideas too quickly. Revisiting them might reveal opportunities that align perfectly with today's needs."
+
+    Engagement Prompt: "Have you ever rediscovered value in an old idea? I'd love to hear your stories."
+
+    VERY IMPORTANT NOTE: PLEASE GENERATE RESPONSE IN AN ARRAY OF OBJECTS, WITH EACH ITEM AS AN IDEA. The response shouldn't contain anything except the array, starting with '[' and ending with ']'. DO not include any sort of headings or endings in the response. 
+    Example structure of response: [
+    {
+    hook: "title or hook of the post, very eye-catchy" ,
+    body: "the rest of the post content",
+    },
+    {
+    hook: "title or hook of the post, very eye-catchy" ,
+    body: "the rest of the post content",
+    },..
+    ]
+    Based on the above context and content, generate 1-2 LinkedIn post ideas in JSON format with each idea as an object. If 10 articles/news are given, generate atleast 1 linkedin post idea for each.
+    
+    Main Content of real-time fetched news = Content: ${JSON.stringify(final_articles)}
+    `;
+
+
+
+
+
+
+    
